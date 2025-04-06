@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxVibe - Mines Game</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="mines.css">
+</head>
+<body>
+    <header class="header">
+        <h1>LuxVibe</h1>
+        <div class="game-logo">
+            <span class="bomb">💣</span>
+            <h2>MINES</h2>
+            <span class="bomb">💣</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#games">Games</a></li>
+                <li><a href="#" class="active">Mines</a></li>
+                <li><a href="../index.html#promotions">Promotions</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mines-game">
+        <div class="game-container">
+            <div class="game-controls">
+                <input type="number" id="bet-amount" placeholder="Bet Amount" min="1" value="10">
+                <input type="number" id="mines-count" placeholder="Number of Mines" min="1" max="24" value="5">
+                <button id="start-game" class="cta-button">Start Game</button>
+            </div>
+            <div class="mines-grid"></div>
+            <div class="game-stats">
+                <div class="balance">Balance: $<span id="player-balance">1000.00</span></div>
+                <div class="multiplier">Multiplier: <span id="current-multiplier">1.00x</span></div>
+                <div class="potential-win">Potential Win: <span id="potential-win">0.00</span></div>
+                <button id="cashout" class="cta-button" disabled>Cashout</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="mines.js"></script>
+</html>
+

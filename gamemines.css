@@ -1,0 +1,62 @@
+
+.navbar ul li a.active {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffd700;
+}
+
+.game-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    animation: pulse 2s infinite;
+}
+
+.game-logo h2 {
+    font-size: 2.5rem;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    letter-spacing: 5px;
+}
+
+.bomb {
+    font-size: 2rem;
+    animation: bounce 1s ease infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.mines-game {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.game-container {
+    background: rgba(26, 26, 26, 0.9);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.game-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.game-controls input {
+    padding: 0.5rem;
+    border: 2px solid #ffd700;
+    background: rgba(0, 0, 0, 0.3);
+
